@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de contacto</title>
+</head>
+<body>
+    <h1>Página de contacto</h1>
+
+    <a href="index.html">Volver a página principal</a> <br><br>
+    <img src="img/imagen.jpg" alt="" width="400px" height="400px" title="Vandelvira">
+    <hr>
+    <br>
+    <form action="datos.php" method="post">
+
+        <fieldset>
+            <legend>Formulario datos personales</legend>
+            <label for="nombre">Nombre</label></h3>
+        <input type="text" name="nombre" id="nombre" value="Pablo"><br>
+        <label>Apellido</label></h3>
+        <input type="text" name="Apellido" id="Apellido" placeholder="Escriba aquí su Apellido"><br>
+        <label>Edad</label></h3>
+        <input type="number" name="Edad" id="Edad"><br>
+        <label>Contraseña</label></h3>
+        <input type="password" name="Clave" id="Clave">
+        <br><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Lista desplegable</legend>
+            <select name="lista" id="lista">
+        <option value="modulo1">Sistemas Operativos en Red</option>
+        <option value="modulo2">Aplicaciones Web</option>
+        <option value="modulo3">Fundamentos de Programacion</option>
+        </select>
+
+        </fieldset>
+
+        <fieldset>
+        <legend>Listado de la compra</legend>
+        <input type="checkbox" name="elemento1" id="elemento1" value="leche">
+        <label for="elemento1"> Caja de leche</label>
+        <input type="checkbox" name="elemento2" id="elemento2" value="pan">
+        <label for="elemento2"> Pan</label>
+        <input type="checkbox" name="elemento3" id="elemento3" value="huevos">
+        <label for="elemento3"> Docena de huevos</label>
+        
+        </fieldset>
+        <br>
+
+        <label for="comentario">Comentarios:</label><br>
+        <textarea name="comentario" id="comentario" rows="10" cols="40"></textarea><br>
+        <button type="submit"> Enviar</button>
+        <button type="reset"> Borrar</button>
+
+    </form>
+
+
+</body>
+</html>
