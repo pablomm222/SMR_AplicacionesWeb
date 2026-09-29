@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Formulario</h1>
+    <form action="datos.php" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre</label></h3>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label>Apellido</label></h3>
+        <input type="text" name="Apellido" id="Apellido" placeholder="Escriba aquí su Apellido"><br>
+        <label>Edad</label></h3>
+        <input type="number" name="Edad" id="Edad" value="18"><br>
+        <label>Contraseña</label></h3>
+        <input type="password" name="Clave" id="Clave"><br>
+        <label>Correo Electrónico</label></h3>
+        <input type="text" name="Correo Electrónico"><br>
+        <label>Ciudades</label></h3>
+        <select name="lista" id="lista">
+            <option value="ciudad1">Jaén</option>
+            <option value="ciudad2">Granada</option>
+            <option value="ciudad3">Sevilla</option>
+            <option value="ciudad4">Málaga</option>
+        </select>
+        <br><br>
+        </fieldset>
+
+
+        <fieldset>
+        <legend>Aficiones</legend>
+        <input type="checkbox" name="aficion1" id="aficion1" value="Cine">
+        <label for="aficion1"> Cine</label><br>
+        <input type="checkbox" name="aficion2" id="aficion2" value="Videojuegos">
+        <label for="aficion2"> Videojuegos</label><br>
+        <input type="checkbox" name="aficion3" id="aficion3" value="Música">
+        <label for="elemento3"> Música </label><br>
+        <input type="checkbox" name="aficion4" id="aficion4" value="Leer">
+        <label for="elemento4"> Leer </label>
+        
+        </fieldset>
+
+        <label for="comentario">Comentarios:</label><br>
+        <textarea name="comentario" id="comentario" rows="10" cols="40"></textarea><br>
+        <button type="submit"> Enviar</button>
+        <button type="reset"> Borrar</button>
+
+
+    </form>
+    
+</body>
+</html>
