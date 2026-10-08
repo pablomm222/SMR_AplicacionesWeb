@@ -1,0 +1,29 @@
+/* 
+CSS de mi página Web de Pablo
+*/
+
+
+body{ 
+    color: #302727;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+h1{
+    color: navy;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-style: wavy  ;
+
+    }
+
+
+h2{
+        color: teal;
+
+    }
+
+    a{
+        text-decoration:none;
+    }
