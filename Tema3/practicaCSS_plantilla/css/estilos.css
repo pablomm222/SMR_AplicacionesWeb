@@ -6,4 +6,23 @@
 /* Escribe aquí tu CSS. Recuerda: cada regla con un comentario
    que explique, con tus palabras, para qué sirve. */
 
-   
+   /*Para cambiar el tipo de letra, el color del texto y un color de fondo en toda la página,
+   he metido dentro del body todo lo que me pedia*/
+
+   body{
+
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color:black;
+      background-color:cadetblue;
+
+   }
+
+   #cabecera{
+
+      background-image:url(../img/cabecera.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      height:200px;
+      color:yellow;
+   }
