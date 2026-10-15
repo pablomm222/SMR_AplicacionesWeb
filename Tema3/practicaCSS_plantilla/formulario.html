@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción — Club de Informática SMR</title>
+    <!-- 1. Enlaza aquí tu hoja de estilos externa: css/estilos.css -->
+
+</head>
+<body>
+    <h1>Club de Informática SMR</h1>
+    <p>Aprende, monta y repara con nosotros</p>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Inscripción</a>
+        <a href="https://www.medac.es" target="_blank">MEDAC</a>
+    </nav>
+
+    <h2>Formulario de inscripción</h2>
+    <p>Rellena tus datos y elige las actividades que te interesan.</p>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.es">
+
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave">
+
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso">
+                <option value="1smr">1º SMR</option>
+                <option value="2smr" selected>2º SMR</option>
+                <option value="otro">Otro ciclo</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Actividades</legend>
+
+            <input type="checkbox" id="montaje" name="actividad" value="montaje">
+            <label for="montaje">Montaje de un PC</label>
+
+            <input type="checkbox" id="wifi" name="actividad" value="wifi">
+            <label for="wifi">Red Wi-Fi segura</label>
+
+            <input type="checkbox" id="web" name="actividad" value="web" checked>
+            <label for="web">Primera web con HTML</label>
+
+            <input type="checkbox" id="torneo" name="actividad" value="torneo">
+            <label for="torneo">Torneo en red local</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Turno y comentarios</legend>
+
+            <input type="radio" id="tarde" name="turno" value="tarde" checked>
+            <label for="tarde">Tarde</label>
+
+            <input type="radio" id="viernes" name="turno" value="viernes">
+            <label for="viernes">Viernes por la mañana</label>
+
+            <label for="comentarios">¿Algo que debamos saber?</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar inscripción</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+    <hr>
+    <p>© 2026 Club de Informática SMR · <a href="index.html">Volver al inicio</a></p>
+</body>
+</html>
