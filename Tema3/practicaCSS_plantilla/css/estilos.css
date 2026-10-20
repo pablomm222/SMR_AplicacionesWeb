@@ -6,23 +6,54 @@
 /* Escribe aquí tu CSS. Recuerda: cada regla con un comentario
    que explique, con tus palabras, para qué sirve. */
 
-   /*Para cambiar el tipo de letra, el color del texto y un color de fondo en toda la página,
-   he metido dentro del body todo lo que me pedia*/
+   /*Para cambiar el tipo de letra he metido un font-family, el color del texto con un color y un color de fondo con un 
+   background-color. Para que se aplique a toda la página web lo he metido todo dentro del body*/
 
    body{
-
       font-family:Georgia, 'Times New Roman', Times, serif;
       color:black;
       background-color:cadetblue;
 
    }
 
-   #cabecera{
+   /*Para aplicar los estilos de la cabecera me he ido al index y antes del h1 he creado un <div id="cabecera"> para que todos
+   los cambio que realice se apliquen solo a la cabecera.*/
 
+   #cabecera{
       background-image:url(../img/cabecera.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       text-align: center;
       height:200px;
       color:yellow;
+
    }
+
+   /*Para darle un estilo de letra solo al subtítulo de la cabecera, he ido al index y he creado en el subtítulo un class, 
+   para que los cambios se realicen solo en el subtítulo*/
+
+   .subtítulo{
+      font-family: cursive;
+
+   }
+
+   /**/
+
+   .menu {
+    background-color: #12294a;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;        /* permite darle padding como a una caja */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #00a99d;
+}
+
