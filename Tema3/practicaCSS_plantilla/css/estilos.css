@@ -34,6 +34,7 @@
 
    .subtítulo{
       font-family: cursive;
+      text-align: center
 
    }
 
@@ -46,7 +47,7 @@
 }
 
 .menu a {
-    display: inline-block;        /* permite darle padding como a una caja */
+    display: inline-block;        
     color: white;
     text-decoration: none;
     padding: 8px 16px;
@@ -57,3 +58,100 @@
     background-color: #00a99d;
 }
 
+
+h2{
+   color: rgb(5, 30, 59);
+   text-decoration:underline;
+}
+
+
+p{
+   line-height:20px;
+   font-size: 15px;
+   text-align:justify;
+
+}
+
+.seccion{
+   background-color:rgb(117, 168, 201);
+   border-radius: 15px;
+   padding: 20px;
+   margin: 15px;
+   border: 10px solid azure;
+
+}
+
+.seccion2{
+   background-color:rgb(117, 168, 201);
+   border-radius: 15px;
+   padding: 20px;
+   margin: 15px;
+   border: 10px solid azure;
+}
+
+.seccion3{
+   background-color:rgb(117, 168, 201);
+   border-radius: 15px;
+   padding: 20px;
+   margin: 15px;
+   border: 10px solid azure;
+}
+
+.lista1{
+   color:rgba(21, 58, 104, 0.992);
+   font-size: 15px;
+   line-height: 20px;
+}
+
+.lista2{
+   color:rgba(21, 58, 104, 0.992);
+   font-size: 15px;
+   line-height: 20px;
+}
+
+.destacado{
+   color: yellow;
+   text-decoration: underline;
+}
+
+a:link{
+color:brown;
+}
+
+a:visited{
+   color:blue;
+}
+
+a:hover{
+   color: #12294a;
+}
+
+#tabla{
+    width: 80%;
+    margin: 20px auto;               
+    border-collapse: collapse; 
+}
+
+th, td {
+    border: 1px solid #ccc;        
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #12294a;
+    color: white;
+}
+
+tr:nth-child(even) {                 
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #d9f2ef;
+}
+
+caption{
+   color:white;
+   font-family: cursive;
+}
