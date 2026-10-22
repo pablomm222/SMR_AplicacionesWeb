@@ -38,7 +38,8 @@
 
    }
 
-   /**/
+   /* Para hacer el menú me he basado en los apuntes del github, utilizando text-align center para centrar el texto,
+   padding para dejar espacio en el texto...*/
 
    .menu {
     background-color: #12294a;
@@ -58,7 +59,8 @@
     background-color: #00a99d;
 }
 
-
+/*Para modificar los h2 no he tenido que nombrarlo por class ni id, ya que se tienen que modificar todos 
+los h2 de la página*/
 h2{
    color: rgb(5, 30, 59);
    text-decoration:underline;
@@ -126,6 +128,9 @@ a:hover{
    color: #12294a;
 }
 
+/*Para hacer la tabla en el index he nombrado con id a la tabla y para modificarla he utilizado todo lo anterior como margin,
+width para el ancho, padding para los espacios que se deja con los bordes, text-align para alinear el texto...*/
+
 #tabla{
     width: 80%;
     margin: 20px auto;               
@@ -156,6 +161,66 @@ caption{
    font-family: cursive;
 }
 
-.formulario{
-   
+/*Para hacer el formulario me he basado en los apuntes del tema, cambiando margenes y bordes con margin y border, y los
+botones modificados con button.*/
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+fieldset {
+    border: 7px solid #1b2d56;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #12294a;
+}
+
+label {
+    display: block;                  
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #00a99d;
+    outline: none;
+}
+
+button {
+    background-color: #193d5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;                
+}
+
+button:hover {
+    background-color: #1a2357;
+}
+
+/*Para cambiar de color el botón de borrar he creado un class en el index y lo he nombrado botonborrar.*/
+.botonborrar{
+   background-color: red;
+   cursor: pointer;
+}
+
+/*Para el pie de página he creado un div con id en el index y en el formulario y lo he nombrado pie,
+para la configuración he utilizado lo que ya he usado anteriormente*/
+
+#pie{
+   background-color:cornsilk;
+   color:#1a2357;
+   text-align: center;
 }
