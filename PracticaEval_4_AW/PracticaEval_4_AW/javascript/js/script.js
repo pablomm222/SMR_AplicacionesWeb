@@ -53,7 +53,7 @@ function modoDia() {
 
 // ===== A4. Colores de la tarjeta: function colorTarjeta(color) =====
 
-// Esta función recibe el color enviado por el botón que se ha pulsado, busco la tarjeta y cambio su fondo por el color recibido.
+// Esta función recibe el color enviado por el botón que se ha pulsado, busco la tarjeta y cambio su fondo por el color recibido
 function colorTarjeta(color) {
 
     document.getElementById("tarjeta").style.backgroundColor = color;
@@ -61,7 +61,8 @@ function colorTarjeta(color) {
 
 // ===== A5. Botón que saluda: function saludar() =====
 
-// Con function muestra mi saludo y cambia el fondo del botón, con alert sale una ventana de aviso con mi nombre y cambio el fondo del botón
+// Con function muestra mi saludo y cambia el fondo del botón, con alert sale una ventana de aviso con mi nombre
+// y cambio el fondo del botón con el backgroundcolor
 function saludar() {
 
     alert("Hola, soy Pablo Martínez");
