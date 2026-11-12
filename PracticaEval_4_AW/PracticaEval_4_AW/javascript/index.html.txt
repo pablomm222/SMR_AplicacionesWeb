@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3 — JavaScript</title>
+</head>
+<body>
+    <!-- CAMBIA: pon tu nombre y apellidos -->
+    <h1>Práctica 3 de PABLO MARTÍNEZ</h1>
+
+    <!-- ===== A1. Mi tarjeta ===== -->
+    <div id="tarjeta">
+        <h2>Mi tarjeta</h2>
+        <p id="saludo">Cargando...</p>
+    </div>
+
+    <!-- ===== A2. Lista de la compra ===== -->
+    <div>
+        <h2>Lista de la compra</h2>
+        <input type="text" id="producto" placeholder="Escribe un producto">
+        <input type="button" value="Añadir" onclick="anadir()">
+
+        <ul id="lista"></ul>
+    </div>
+
+    <!-- ===== A3. Modo noche y modo día ===== -->
+    <div>
+        <h2>Modo noche / día</h2>
+        <input type="button" value="Modo noche" onclick="modoNoche()">
+        <input type="button" value="Modo día" onclick="modoDia()">
+        <p id="modo">Modo día activado</p>
+    </div>
+
+    <!-- ===== A4. Colores de la tarjeta ===== -->
+    <div>
+        <h2>Colores de la tarjeta</h2>
+        <input type="button" value="Verde" onclick="colorTarjeta('green')">
+        <!-- AÑADE AQUÍ al menos 2 botones más con otros colores -->
+        <input type="button" value="Azul" onclick="colorTarjeta('darkblue')">
+        <input type="button" value="Rojo" onclick="colorTarjeta('red')">
+    </div>
+
+    <!-- ===== A5. Botón que saluda ===== -->
+    <div>
+        <h2>Botón que saluda</h2>
+        <input type="button" id="botonSaludo" value="Salúdame" onclick="saludar()">
+    </div>
+
+    <!-- El script va al final del body -->
+    <script src="js/script.js"></script>
+</body>
+</html>

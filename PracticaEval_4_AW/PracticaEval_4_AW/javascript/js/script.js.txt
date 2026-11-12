@@ -1,0 +1,69 @@
+// =========================================================
+//  Práctica 3 — JavaScript
+//  Nombre y apellidos: Pablo Martínez Muñoz
+//  Recuerda: cada bloque con un comentario escrito por ti
+// =========================================================
+
+
+// ===== A1. Mi tarjeta (se ejecuta al cargar la página, sin función) =====
+
+// He buscado el párrafo del saludo y le cambio su contenido con innerHTML y lo he guardado en una variable con var
+var saludo = document.getElementById("saludo");
+saludo.innerHTML = "Hola, me llamo Pablo Martínez y estudio 2º SMR";
+
+// Busco la tarjeta y hago lo mismo que en el anterior paso y pongo la letra blanca sobre un fondo de otro color
+var tarjeta = document.getElementById("tarjeta");
+tarjeta.style.color = "white";
+tarjeta.style.backgroundColor = "darkblue";
+
+// ===== A2. Lista de la compra: function anadir() =====
+
+// En este paso con function añado a la lista el producto que escribo, busco la caja y guardo el texto que contiene con el .value
+// después he creado una etiqueta con li para el nuevo producto q añada, he creado un nodo de texto con textNode
+//meto todo lo nuevo que he escrito en la lista con appenChild y la he guardado en una variable con var
+//por último 
+function anadir() {
+ 
+    var producto = document.getElementById("producto").value;
+    var elemento = document.createElement("li");
+    var texto = document.createTextNode(producto);
+    elemento.appendChild(texto);
+    var lista = document.getElementById("lista");
+    lista.appendChild(elemento);
+}
+
+// ===== A3. Modo noche y modo día: function modoNoche() y function modoDia() =====
+
+// Con function he activado el modo noche cambiando el fondo y el texto,  pongo el fondo de la página en negro, el color del texto en blanco y un mensaje
+// para saber q el modo noche está activado
+    function modoNoche() {
+
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+    document.getElementById("modo").innerHTML = "Modo noche activado";
+}
+
+// Hago los mismos pasos q antes pero cambiando colores y el mensaje de que el modo día esta activado
+function modoDia() {
+
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+    document.getElementById("modo").innerHTML = "Modo día activado";
+}
+
+// ===== A4. Colores de la tarjeta: function colorTarjeta(color) =====
+
+// Esta función recibe el color enviado por el botón que se ha pulsado, busco la tarjeta y cambio su fondo por el color recibido.
+function colorTarjeta(color) {
+
+    document.getElementById("tarjeta").style.backgroundColor = color;
+}
+
+// ===== A5. Botón que saluda: function saludar() =====
+
+// Con function muestra mi saludo y cambia el fondo del botón, con alert sale una ventana de aviso con mi nombre y cambio el fondo del botón
+function saludar() {
+
+    alert("Hola, soy Pablo Martínez");
+    document.getElementById("botonSaludo").style.backgroundColor = "red";
+}
